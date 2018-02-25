@@ -1,8 +1,6 @@
 package chapter05.caseX;
 
-/**
- * Created by xusong on 2018/2/25.
- */
+
 public class Cups {
     static Cup cup1;
     static Cup cup2;
