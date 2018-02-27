@@ -1,6 +1,6 @@
 package chapter07.case06;
 
-import org.omg.CORBA.PUBLIC_MEMBER;
+
 
 /**
  * 利用继承来实现太空船类
