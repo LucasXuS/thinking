@@ -14,6 +14,7 @@ public class Line extends Shape {
         this.end = end;
         print("Drawing Line: " + start + ", " + end);
     }
+
     @Override
     void dispose() {
         print("Erasing Line: " + start + ", " + end);
