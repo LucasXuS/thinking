@@ -5,16 +5,15 @@ import java.util.Random;
 /**
  * final 关键字：所表达的是：这是无法被改变的
  * final 的使用：数据，方法，类
- *
+ * <p>
  * final 的目的：设计（确保某个参量或者函数是固定不变）或效率（final 是常量。减轻了运行时的负担）
- *
+ * <p>
  * final 数据
  * final 数据有两种：
- * 1 final 常量：定义时必须对其赋值
+ * 1 final 常量：定义后必须对其赋值（如果定义后不立刻赋值，编译器报错。这时需要 1 立刻赋值  2 在所有构造函数中都赋值）
  * 2 final 引用：引用所指向的对象不可变化，但是指向的对象却是可以被修改的。这一规则同样应用于数组。因为数组也是对象 。
  * 3 final static 将占据一段不可改变的内存空间。
- *
- * **/
+ **/
 public class FinalData {
     private static Random random = new Random(47);
     private String id;
@@ -62,12 +61,19 @@ public class FinalData {
         FinalData fd2 = new FinalData("fd2");
         System.out.println(fd1);
         System.out.println(fd2);
-        /**
+        /*
          * output:
          * fd1: i4 = 15, INT_5 = 18
          * Creating new FinalData
          * fd1: i4 = 15, INT_5 = 18
          * fd2: i4 = 13, INT_5 = 18
+         * */
+
+        /*
+         * 1 我们不可能因为某数据是final就认为在编译时就可以知道它的值，比如i4 和 INT_5被赋予随机数
+         * 2 static final 比 单纯的final更加稳定。在我们创建一个新的对象fd2后，i4在新的对象中发生了变化
+         * INT_5仍然保持不变。因为static final所在的内存区域与数据全部都是恒定的。
+         *
          * */
 
 
