@@ -20,6 +20,4 @@ public class Insect {
         print(s);
         return 47;
     }
-
-
 }
