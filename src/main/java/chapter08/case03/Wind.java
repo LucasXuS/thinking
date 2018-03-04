@@ -8,16 +8,16 @@ import static util.Print.print;
 public class Wind extends Instrument  {
     @Override
     void play(Note note) {
-        print("Percussion.play() " + note);
+        print("Wind.play() " + note);
     }
 
     @Override
     String what() {
-        return "Percussion";
+        return "Wind";
     }
 
     @Override
     void adjust() {
-        print("Adjusting Percussion");
+        print("Adjusting Wind");
     }
 }
