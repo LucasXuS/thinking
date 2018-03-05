@@ -12,5 +12,8 @@ interface E {
         void f();
     }
 
+    // 在接口内部不可再创建私有接口
+    // private interface I{}
+
     void g();
 }

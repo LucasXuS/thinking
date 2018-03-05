@@ -34,7 +34,7 @@ public class A {
         }
     }
 
-    interface D {
+    private interface D {
         void f();
     }
 
