@@ -10,6 +10,6 @@ public class WaveForm {
 
     @Override
     public String toString() {
-        return "Waveform" + id;
+        return "Waveform " + id;
     }
 }

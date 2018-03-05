@@ -1,14 +1,10 @@
 package chapter09.case03;
 import static util.Print.print;
 /**
- * Created by xusong on 2018/3/4.
+ * 修改之前，这是一个类，经过代码修改改为了一个接口
  */
-public class Processor {
-    public String name(){
-        return getClass().getSimpleName();
-    }
+public interface Processor {
+    public String name();
 
-    Object process(Object input){
-        return input;
-    }
+    Object process(Object input);
 }
