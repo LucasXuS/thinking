@@ -1,4 +1,4 @@
-package chapter09.case03;
+package chapter09.case04;
 import static util.Print.print;
 /**
  * "策略"设计模式与不使用接口带来的不便
