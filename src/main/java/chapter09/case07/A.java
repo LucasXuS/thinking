@@ -34,6 +34,7 @@ public class A {
         }
     }
 
+    // 这个接口必须在此类中实现，别无他途。
     private interface D {
         void f();
     }
