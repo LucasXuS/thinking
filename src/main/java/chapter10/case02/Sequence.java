@@ -19,6 +19,8 @@ public class Sequence {
             items[next++] = x;
     }
 
+    // SequenceSelector的三个方法都用到了外围类的元素items
+    // 所以SequenceSelector并不是一个纯粹的封闭的类。
     private class SequenceSelector implements Selector {
 
         private int i = 0;
@@ -52,6 +54,14 @@ public class Sequence {
             System.out.println(selector.current() + " ");
             selector.next();
         }
+
+        /*
+        * 内部类访问外围类的元素的原理：
+        * 当外围类对象创建了一个内部类的对象时，此内部类的对象会捕获一个
+        * 指向外围类对象的引用。当我们使用内部类访问外围类的元素时，就是
+        * 用这个引用来访问那些元素。
+        *
+        * **/
     }
 
 }
