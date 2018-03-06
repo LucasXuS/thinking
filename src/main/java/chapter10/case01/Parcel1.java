@@ -25,13 +25,13 @@ public class Parcel1 {
     }
 
     // 使用内部类
-    public void ship(String dest){
+    public void ship(String dest) {
         Contents c = new Contents();
         Destination d = new Destination(dest);
         System.out.println(d.readLabel());
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Parcel1 p = new Parcel1();
         p.ship("Tasmania");
     }

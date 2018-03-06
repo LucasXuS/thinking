@@ -1,7 +1,7 @@
 package chapter10.case01;
 
 /**
- * Created by lenovo on 2018/3/6.
+ * 通过函数向外部给出内部类对象
  */
 public class Parcel2 {
     class Contents {
@@ -24,6 +24,7 @@ public class Parcel2 {
         }
     }
 
+    // 内部类常见的使用方法
     public Destination to(String s){
         return new Destination(s);
     }
