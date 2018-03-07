@@ -1,7 +1,7 @@
 package chapter10.case08;
 
 /**
- * Created by lenovo on 2018/3/7.
+ * 利用实例初始化做构造函数，但是缺点是没有办法做重载函数。
  */
 public class Parcel10 {
     public Destination destination(final String dest, final float price) {
