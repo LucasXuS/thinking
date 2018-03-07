@@ -15,7 +15,7 @@ public class Parcel7 {
         };
     }
 
-    public void main(String[] args) {
+    public static void main(String[] args) {
         Parcel7 p = new Parcel7();
         Contents c = p.contents();
     }
