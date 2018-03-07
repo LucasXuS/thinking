@@ -5,6 +5,12 @@ package chapter10.case02;
  * 所以它能访问其外围对象的所有成员，而不需要任何特殊条件。
  * <p>
  * 内部类还拥有外围类的所有元素的访问权。
+ * <p>
+ * <p>
+ * 另：
+ * 1 如果该类不使用内部类，就必须声明“Sequence是一个Selector”对于某个特定的Sequence只能
+ * 有一个Selector。而内部类就保证了通用性。而使用内部类，通过添加函数如“reverseSelector()”
+ * 用它来生成一个反方向序列遍历的Selector.只有内部类才有此灵活性。
  */
 public class Sequence {
     private Object[] items;
@@ -43,6 +49,26 @@ public class Sequence {
         return new SequenceSelector();
     }
 
+    public Selector reverseSelector() {
+        return new Selector() {
+
+            private int i = items.length - 1;
+
+            public boolean end() {
+                return i < 0;
+            }
+
+            public Object current() {
+                return items[i];
+            }
+
+            public void next() {
+                if (i >= 0)
+                    i--;
+            }
+        };
+    }
+
     public static void main(String[] args) {
         Sequence sequence = new Sequence(10);
         for (int i = 0; i < 10; i++) {
@@ -53,6 +79,12 @@ public class Sequence {
         while (!selector.end()) {
             System.out.println(selector.current() + " ");
             selector.next();
+        }
+
+        Selector reverseSelector = sequence.reverseSelector();
+        while (!reverseSelector.end()){
+            System.out.println(reverseSelector.current() + " ");
+            reverseSelector.next();
         }
 
         /*
