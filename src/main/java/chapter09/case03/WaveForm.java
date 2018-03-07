@@ -1,17 +1,15 @@
 package chapter09.case03;
 
 /**
- * Created by xusong on 2018/3/4.
+ * Created by lenovo on 2018/3/5.
  */
 public class WaveForm {
-    // 这个是chapter08.case09的策略，此处不深入讨论
+    // 计数，在chapter08.case09中有详述
     private static long counter;
     private final long id = counter++;
 
     @Override
-    public String toString(){
+    public String toString() {
         return "Waveform " + id;
     }
-
-
 }

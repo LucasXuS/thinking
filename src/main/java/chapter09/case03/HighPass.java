@@ -1,7 +1,7 @@
 package chapter09.case03;
 
 /**
- * Created by xusong on 2018/3/4.
+ * Created by lenovo on 2018/3/5.
  */
 public class HighPass extends Filter {
     double cutoff;
@@ -11,7 +11,7 @@ public class HighPass extends Filter {
     }
 
     @Override
-    public WaveForm process(WaveForm input){
+    WaveForm process(WaveForm input) {
         return input;
     }
 }

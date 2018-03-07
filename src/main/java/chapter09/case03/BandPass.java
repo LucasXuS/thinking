@@ -1,20 +1,19 @@
 package chapter09.case03;
 
 /**
- * Created by xusong on 2018/3/4.
+ * Created by lenovo on 2018/3/5.
  */
 public class BandPass extends Filter {
 
+    double highCutoff, lowCutoff;
 
-    double lowCutoff, highCutoff;
-
-    BandPass(double lowCutoff, double highCutoff){
-        this.lowCutoff = lowCutoff;
+    public BandPass(double highCutoff, double lowCutoff) {
         this.highCutoff = highCutoff;
+        this.lowCutoff = lowCutoff;
     }
 
     @Override
-    public WaveForm process(WaveForm input){
+    WaveForm process(WaveForm input) {
         return input;
     }
 }
