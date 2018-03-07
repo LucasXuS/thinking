@@ -23,6 +23,8 @@ public class Parcel4 {
     }
 
     // 上溯造型，隐藏内部类PDestination，使得用户无法直接使用这个类
+    // 阅读源码的过程中，经常觉得有用的类，转向定义文件发现是个接口。
+    // 因此很有可能是使用内部类的方式进行了实现，并且进行隐藏。
     public Destination destination(String s) {
         return new PDestination(s);
     }
