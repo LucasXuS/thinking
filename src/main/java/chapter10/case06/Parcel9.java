@@ -1,9 +1,10 @@
 package chapter10.case06;
 
 /**
- * 直接利用外围类信息初始化内部类
+ * 直接函数参数初始化内部类
  */
 public class Parcel9 {
+
 
     public Destination destination(final String dest) {
         return new Destination() {
