@@ -28,6 +28,7 @@ public class HorrorShow {
         w(vlad);
 
         //匿名初始化，直接实现接口，将派生类名隐藏。
+        //实际上这是一个匿名内部类。一个匿名类继承了Vampire然后又上溯造型了。
         Vampire v2 = new Vampire() {
             public void drinkBlood() {
 
