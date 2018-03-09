@@ -1,7 +1,7 @@
 package chapter10.case15;
 
 /**
- * Created by lenovo on 2018/3/9.
+ * 接口方式
  */
 public class Callee1 implements Incrementable {
     private int i = 0;

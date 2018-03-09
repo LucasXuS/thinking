@@ -1,7 +1,7 @@
 package chapter10.case15;
 
 /**
- * Created by lenovo on 2018/3/9.
+ * 内部类方式
  */
 public class Callee2 extends MyIncrement {
     private int i = 0;

@@ -16,5 +16,16 @@ public class Callbacks {
         caller1.go();
         caller2.go();
         caller2.go();
+        /*
+        * output:
+        * Other operation
+        * 1               //MyIncrement.f(c2)
+        * 1               //caller1.go()
+        * 2               //caller1.go()
+        * Other operation
+        * 2               //caller2.go()
+        * Other operation
+        * 3               //caller2.go()
+        * **/
     }
 }
