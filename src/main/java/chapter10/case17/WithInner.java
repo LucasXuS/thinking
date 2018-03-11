@@ -6,4 +6,6 @@ package chapter10.case17;
 public class WithInner {
     class Inner {
     }
+
+    static class StaticInner{}
 }
