@@ -1,4 +1,4 @@
-package chapter11.case03;
+package chapter11.case02;
 
 import java.util.*;
 
