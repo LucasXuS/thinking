@@ -7,6 +7,7 @@ import java.util.*;
 
 /**
  * 忘记容器类型，对每个元素继续操作。（本质来自于内部类和上溯造型的结合）
+ * 迭代器统一了我们访问容器的方式。
  */
 public class CrossContainerIteration {
 
