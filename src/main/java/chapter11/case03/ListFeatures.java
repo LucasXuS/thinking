@@ -42,6 +42,12 @@ public class ListFeatures {
         // 在元素不存在的时候尝试删除元素
         print("6: " + pets.remove(cymric)); // 返回false表示删除失败
 
+        /*
+        * 实际上，检索和删除都会用到object底层的equals()方法。
+        * 在Pet中，我们把这个equals方法做了重写，通过判断类型是否一致，
+        * 名称是否一致，散列值是否一致三个指标来判断两个对象是否相同
+        * **/
+
         // 正确删除的返回值
         print("7: " + pets.remove(p));
 
@@ -51,6 +57,12 @@ public class ListFeatures {
         // 用序号添加一个元素
         pets.add(3, new Mouse());
         print("9: " + pets);
+
+        /*
+        * 对于LinkedList在猎鸟中间插入和删除都是廉价操作。
+        * 对于ArrayList，这是代价高昂的操作。
+        *
+        * **/
 
         // 用序列号提取子序列
         List<Pet> sub = pets.subList(1, 4);
