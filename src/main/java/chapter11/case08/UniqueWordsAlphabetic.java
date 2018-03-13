@@ -12,8 +12,9 @@ import java.util.TreeSet;
 public class UniqueWordsAlphabetic {
 
     public static void main(String[] args){
-        // 按照字母顺序排序
+        // 按照字母顺序排序 String.CASE_INSENSITIVE_ORDER 本质上是一个Comparator<String>
         Set<String> words = new TreeSet<>(String.CASE_INSENSITIVE_ORDER);
+        // TextFile 是ArrayList<String>的派生类，所以可以作为初始化的元素
         words.addAll(new TextFile("SetOfInteger.java", "\\W+"));
         Print.print(words);
     }
