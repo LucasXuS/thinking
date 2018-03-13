@@ -13,6 +13,8 @@ import java.util.*;
  * <p>
  * 先进先出是最典型的队列规则。
  * 但是我们可以通过实现Comparator接口指定自己的优先级规则
+ *
+ * 我们针对优先级队列做了一个基于整数元素的简单实现，详见chapter09.case11
  */
 public class PriorityQueueDemo implements Comparator<Worker> {
 
