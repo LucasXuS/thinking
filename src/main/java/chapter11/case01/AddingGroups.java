@@ -28,6 +28,10 @@ public class AddingGroups {
         list.set(1, 99);
         print(list);
         //list.add(11); // 这个list的底层是个数组，因此不能调整尺寸。
+        // 底层是数组的原因是ArrayList实际上有两个，一个来自于ArrayList.java,
+        // 一个来自于Arrays.java的内部类，后者是一个基于数组的类
+
+        // Arrays中的ArrayList是通过 继承 AbstractList 继承 AbstractCollection (继承 List implements List)实现的。
 
 
     }

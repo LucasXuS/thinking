@@ -89,9 +89,6 @@ public class PriorityQueueDemo implements Comparator<Worker> {
             Worker worker = workers2.remove();
             Print.print(worker.getName() + "'s salary is: " + worker.getSalary());
         }
-
-
-
     }
 
     @Override

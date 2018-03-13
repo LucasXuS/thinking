@@ -14,6 +14,9 @@ package chapter09.case02;
  * 接口里面可以包含属性，但是这些属性都是默认final
  * 和static的
  *
+ * 另：看到chapter10.case11就知道，接口里面也可以有函数
+ * 只不过前面要加上default关键字。
+ *
  *
  */
 public class Music5 {
