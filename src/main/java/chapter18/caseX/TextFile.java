@@ -1,10 +1,9 @@
 package chapter18.caseX;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.TreeSet;
 
 /**
  * Created by xusong on 2018/3/13.
@@ -20,7 +19,7 @@ public class TextFile extends ArrayList<String> {
             );
             try {
                 String s;
-                while ((s = in.readLine()) != null){
+                while ((s = in.readLine()) != null) {
                     sb.append(s);
                     sb.append("\n");
                 }
@@ -34,5 +33,52 @@ public class TextFile extends ArrayList<String> {
         return sb.toString();
     }
 
+    public static void write(String fileName, String text) {
+        try {
+            PrintWriter out = new PrintWriter(
+                    new File(fileName).getAbsoluteFile()
+            );
+            try {
+                out.print(text);
+            } finally {
+                out.close();
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
+    public TextFile(String fileName, String splitter) {
+        super(Arrays.asList(read(fileName).split(splitter)));
+        if (get(0).equals(""))
+            remove(0);
+    }
+
+    public TextFile(String fileName){
+        this(fileName, "\n");
+    }
+
+    public void write(String fileName){
+        try{
+            PrintWriter out = new PrintWriter(
+                    new File(fileName).getAbsoluteFile()
+            );
+            try{
+                this.forEach(out::println);
+            }finally {
+                out.close();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void main(String[] args){
+        String file = read("TextFile.java");
+        write("text.txt", file);
+        TextFile textFile = new TextFile("text.txt");
+        textFile.write("test2.txt");
+        TreeSet<String> words = new TreeSet<>(new TextFile("TextFile.java", "\\W+"));
+        System.out.println(words.headSet("a"));
+    }
 }
