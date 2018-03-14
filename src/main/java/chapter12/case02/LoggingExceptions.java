@@ -1,7 +1,7 @@
 package chapter12.case02;
 
 /**
- * Created by lenovo on 2018/3/14.
+ * 异常与记录日志(侧面反映异常的部分打印原理)
  */
 public class LoggingExceptions {
 
