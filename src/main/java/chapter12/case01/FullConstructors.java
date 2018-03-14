@@ -12,6 +12,7 @@ package chapter12.case01;
  */
 public class FullConstructors {
 
+    // throws Exception() 专业术语叫做异常说明
     public static void f() throws MyException {
         System.out.println("Throwing MyException from f()");
         // 我们甚至可以很“肤浅”地认为throw 的作用类似return
@@ -40,5 +41,10 @@ public class FullConstructors {
             e.printStackTrace(System.err);
         }
     }
+
+    /*
+    * 勘误：
+    * Thinking in JAVA 256页出现了举例混乱的错误
+    * **/
 
 }
