@@ -14,7 +14,11 @@ public class LoggingException extends Exception {
 
     public LoggingException(){
         StringWriter trace = new StringWriter();
+
+        // 为trace赋值
         printStackTrace(new PrintWriter(trace));
+
+        // 打印错误以及错误路径
         logger.severe(trace.toString());
     }
 }

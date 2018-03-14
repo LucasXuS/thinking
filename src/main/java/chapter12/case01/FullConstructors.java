@@ -35,6 +35,8 @@ public class FullConstructors {
         }catch (MyException e){
             // 这个是通过写入System.err输出异常
             // printStackTrace在无参的时候会默认调用printStackTrace(System.err)
+            // printStackTrace来自类Throwable，它将打印
+            // “从方法调用出直到异常抛出处”的方法调用序列。
             e.printStackTrace(System.err);
         }
     }
