@@ -14,6 +14,20 @@ package chapter12.case09;
  * 所有构造器均不会被强制添加异常说明
  * <p>
  * 5 我们可以throw 异常的派生类代替基类
+ *
+ * 第五条的说明：
+ * 这一条是非常合理的设定。由于在本函数中抛出的是Foul的子类
+ * 所以当写：
+ * Inning i = new StormyInning();
+ * try{
+ *     i.atBat():
+ * }catch(Foul f){
+ *
+ * }
+ * 我们仍然可以捕获异常。但是如果抛出的是BaseballException
+ * 上述代码将无法捕获该异常。
+ *
+ *
  */
 public class StormyInning extends Inning implements Storm {
 
