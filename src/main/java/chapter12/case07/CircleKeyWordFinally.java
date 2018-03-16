@@ -5,12 +5,20 @@ package chapter12.case07;
  */
 public class CircleKeyWordFinally {
 
-    public static void testReturn() {
+    public static void testReturn(int i) {
+        System.out.println("Initialization that requires cleanup");
         try {
-            System.out.println("in testReturn try block");
+            System.out.println("Point 1");
+            if (i == 1) return;
+            System.out.println("Point 2");
+            if (i == 2) return;
+            System.out.println("Point 3");
+            if (i == 3) return;
+
+            System.out.println("End");
             return;
         } finally {
-            System.out.println("in testReturn finally block");
+            System.out.println("Performing cleanup");
         }
     }
 
@@ -46,7 +54,8 @@ public class CircleKeyWordFinally {
     }
 
     public static void main(String[] args) {
-        testReturn();
+        for (int i = 0; i <= 4; i++)
+            testReturn(i);
         testBreak();
         testContinue();
     }
