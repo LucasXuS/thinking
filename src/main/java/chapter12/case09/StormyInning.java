@@ -1,7 +1,7 @@
 package chapter12.case09;
 
 /**
- * Created by lenovo on 2018/3/16.
+ * 在基类或者接口中的方法有
  */
 public class StormyInning extends Inning implements Storm{
     public StormyInning() throws BaseballException {
