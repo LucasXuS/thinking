@@ -40,14 +40,10 @@ public class LostMessage {
         * 结合运行时异常的定义，运行时异常不会强制程序编写者catch错误，
         * 这就导致了运行时异常更容易被忽略，只需要在finally做好隐藏即可
         * **/
-
-
         try{
             throw new RuntimeException();
         }finally {
             return;
         }
-
-
     }
 }
