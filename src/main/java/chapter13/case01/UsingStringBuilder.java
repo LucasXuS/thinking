@@ -1,5 +1,7 @@
 package chapter13.case01;
 
+import java.util.Random;
+
 /**
  * 字符串拼接的机理：
  * 字符串直接相加，实际上编译器在内部调用了StringBuilder,StringBuilder是一个非常高效的拼接字符串的方案
@@ -53,6 +55,29 @@ public class UsingStringBuilder {
         String result = "";
         for (String field : fields) result += field;
         return result;
+    }
+
+
+    public static Random random = new Random(47);
+
+    @Override
+    public String toString() {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("[");
+        for (int i = 0; i < 25; i++) {
+            stringBuilder.append(random.nextInt(100));
+            stringBuilder.append(", ");
+            // 如果在这里使用stringBuilder.append(random.nextInt(100) + ", ")就前功尽弃了，因为在这里编译器会在每次循环时重新创建StringBuilder
+            // 同样会消耗大量内存。
+        }
+        stringBuilder.delete(stringBuilder.length() - 2, stringBuilder.length());
+        stringBuilder.append("]");
+        return stringBuilder.toString();
+    }
+
+    public static void main(String[] args) {
+        UsingStringBuilder usingStringBuilder = new UsingStringBuilder();
+        System.out.println(usingStringBuilder.toString());
     }
 
 
