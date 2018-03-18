@@ -12,20 +12,21 @@ public class CoffeeGenerator implements Generator<Coffee>, Iterable<Coffee> {
 
     private static Random random = new Random(47);
 
+    private int size;
+
     public CoffeeGenerator() {
     }
 
-    private int size = 0;
-
-    public CoffeeGenerator(int sz) {
-        size = sz;
+    public CoffeeGenerator(int size) {
+        this.size = size;
     }
+
 
     @Override
     public Coffee next() {
         try {
             return (Coffee) types[random.nextInt(types.length)].newInstance();
-        } catch (Exception e) {
+        } catch (InstantiationException | IllegalAccessException e) {
             throw new RuntimeException(e);
         }
     }
@@ -48,19 +49,6 @@ public class CoffeeGenerator implements Generator<Coffee>, Iterable<Coffee> {
         public Coffee next() {
             count--;
             return CoffeeGenerator.this.next();
-        }
-
-        public void removed() {
-            throw new UnsupportedOperationException();
-        }
-    }
-
-    public static void main(String[] args) {
-        CoffeeGenerator generator = new CoffeeGenerator();
-        for (int i = 0; i < 5; i++)
-            System.out.println(generator.next());
-        for (Coffee c : new CoffeeGenerator(5)) {
-            System.out.println(c);
         }
     }
 }
