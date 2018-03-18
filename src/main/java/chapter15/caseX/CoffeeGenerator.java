@@ -51,4 +51,9 @@ public class CoffeeGenerator implements Generator<Coffee>, Iterable<Coffee> {
             return CoffeeGenerator.this.next();
         }
     }
+
+    public static void main(String[] args){
+        for(Coffee c : new CoffeeGenerator(10))
+            System.out.println(c);
+    }
 }
