@@ -7,19 +7,21 @@ import java.io.IOException;
  * Created by xusong on 2018/3/18.
  */
 public class WrapCheckedException {
-    void throwRuntimeException(int type){
+    void throwRuntimeException(int type) {
         try {
-            switch (type){
+            switch (type) {
                 case 0:
                     throw new FileNotFoundException();
                 case 1:
                     throw new IOException();
                 case 2:
                     throw new RuntimeException();
+                default:
+                    return;
             }
         } catch (Exception e) {
             // 隐藏检查
-            throw new RuntimeException();
+            throw new RuntimeException(e);
         }
     }
 }
