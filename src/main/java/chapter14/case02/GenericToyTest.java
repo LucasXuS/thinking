@@ -1,7 +1,7 @@
 package chapter14.case02;
 
 /**
- * Created by lenovo on 2018/4/8.
+ * 对Class用泛型，类型需要极端精确。
  */
 public class GenericToyTest {
     public static void main(String[] args) throws IllegalAccessException, InstantiationException {

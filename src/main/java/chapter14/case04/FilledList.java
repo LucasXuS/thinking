@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by lenovo on 2018/4/8.
+ * class<T>的应用举例
  */
 public class FilledList<T> {
     private Class<T> type;
