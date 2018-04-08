@@ -1,4 +1,4 @@
-package chapter14.caseX;
+package chapter14.case06;
 
 import chapter17.caseX.Individual;
 

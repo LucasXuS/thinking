@@ -1,6 +1,6 @@
 package chapter14.caseY;
 
-import chapter14.caseX.*;
+import chapter14.case06.*;
 
 import java.util.Arrays;
 import java.util.Collections;

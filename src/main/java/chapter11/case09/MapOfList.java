@@ -1,6 +1,6 @@
 package chapter11.case09;
 
-import chapter14.caseX.*;
+import chapter14.case06.*;
 import util.Print;
 
 import java.util.Arrays;

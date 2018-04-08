@@ -1,9 +1,9 @@
 package chapter11.case03;
 
-import chapter14.caseX.Cymric;
-import chapter14.caseX.Hamster;
-import chapter14.caseX.Mouse;
-import chapter14.caseX.Pet;
+import chapter14.case06.Cymric;
+import chapter14.case06.Hamster;
+import chapter14.case06.Mouse;
+import chapter14.case06.Pet;
 import chapter14.caseY.Pets;
 
 import java.util.*;

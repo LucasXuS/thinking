@@ -1,6 +1,6 @@
 package chapter11.case11;
 
-import chapter14.caseX.Pet;
+import chapter14.case06.Pet;
 import chapter14.caseY.Pets;
 
 import java.util.*;

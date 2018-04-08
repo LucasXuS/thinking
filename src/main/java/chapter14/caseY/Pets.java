@@ -1,7 +1,7 @@
 package chapter14.caseY;
 
-import chapter14.caseX.Pet;
-import chapter14.caseX.PetCreator;
+import chapter14.case06.Pet;
+import chapter14.case06.PetCreator;
 
 import java.util.ArrayList;
 
