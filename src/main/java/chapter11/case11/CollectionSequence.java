@@ -1,7 +1,7 @@
 package chapter11.case11;
 
 import chapter14.case06.Pet;
-import chapter14.caseY.Pets;
+import chapter14.case07.Pets;
 
 import java.util.AbstractCollection;
 import java.util.Iterator;

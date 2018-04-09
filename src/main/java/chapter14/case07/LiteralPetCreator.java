@@ -1,4 +1,4 @@
-package chapter14.caseY;
+package chapter14.case07;
 
 import chapter14.case06.*;
 

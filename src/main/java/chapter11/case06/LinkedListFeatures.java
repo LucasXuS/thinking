@@ -3,7 +3,7 @@ package chapter11.case06;
 import chapter14.case06.Hamster;
 import chapter14.case06.Pet;
 import chapter14.case06.Rat;
-import chapter14.caseY.Pets;
+import chapter14.case07.Pets;
 
 import java.util.LinkedList;
 
