@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Created by lenovo on 2018/3/12.
+ * 利用 类.class 生成类列表
  */
 public class LiteralPetCreator extends PetCreator {
 

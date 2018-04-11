@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by xusong on 2018/4/9.
+ * 利用forName生成类列表
  */
 public class ForNameCreator extends PetCreator {
 
