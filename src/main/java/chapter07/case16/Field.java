@@ -1,6 +1,6 @@
 package chapter07.case16;
 
-import static util.Print.print;
+import static chapter06.case01.Print.print;
 
 /**
  * 为了验证，如果变量不存在静态，依然是主函数先运行。

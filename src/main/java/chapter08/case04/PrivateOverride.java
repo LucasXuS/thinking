@@ -1,5 +1,5 @@
 package chapter08.case04;
-import static util.Print.print;
+import static chapter06.case01.Print.print;
 /**
  * 私有方法不可被覆盖
  */

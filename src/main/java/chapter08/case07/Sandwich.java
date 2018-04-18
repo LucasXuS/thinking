@@ -1,6 +1,6 @@
 package chapter08.case07;
 
-import static util.Print.print;
+import static chapter06.case01.Print.print;
 
 /**
  * 构造器和多态

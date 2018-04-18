@@ -1,5 +1,5 @@
 package chapter09.case03;
-import static util.Print.print;
+
 /**
  * 修改之前，这是一个类，经过代码修改改为了一个接口
  */

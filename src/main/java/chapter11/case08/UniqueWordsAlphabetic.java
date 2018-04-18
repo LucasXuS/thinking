@@ -1,7 +1,7 @@
 package chapter11.case08;
 
 import chapter18.caseX.TextFile;
-import util.Print;
+import chapter06.case01.Print;
 
 import java.util.Set;
 import java.util.TreeSet;

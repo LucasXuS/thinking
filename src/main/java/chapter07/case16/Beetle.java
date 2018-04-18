@@ -1,6 +1,6 @@
 package chapter07.case16;
 
-import static util.Print.print;
+import static chapter06.case01.Print.print;
 
 /**
  * 初始化顺序

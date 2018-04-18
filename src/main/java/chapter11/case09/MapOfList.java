@@ -1,7 +1,7 @@
 package chapter11.case09;
 
 import chapter14.case06.*;
-import util.Print;
+import chapter06.case01.Print;
 
 import java.util.Arrays;
 import java.util.HashMap;

@@ -1,7 +1,7 @@
 package chapter10.case19;
 
-import static util.Print.print;
-import static util.Print.printnb;
+import static chapter06.case01.Print.print;
+import static chapter06.case01.Print.printnb;
 
 /**
  * 局部内部类

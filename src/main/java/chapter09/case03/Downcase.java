@@ -1,5 +1,4 @@
 package chapter09.case03;
-import static util.Print.print;
 
 /**
  * Created by xusong on 2018/3/4.

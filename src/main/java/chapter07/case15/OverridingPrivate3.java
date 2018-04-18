@@ -1,6 +1,6 @@
 package chapter07.case15;
 
-import static util.Print.print;
+import static chapter06.case01.Print.print;
 
 /**
  * Created by xusong on 2018/2/28.

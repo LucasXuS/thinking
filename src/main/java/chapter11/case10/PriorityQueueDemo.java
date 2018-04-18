@@ -1,6 +1,6 @@
 package chapter11.case10;
 
-import util.Print;
+import chapter06.case01.Print;
 
 import java.util.*;
 

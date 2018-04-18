@@ -1,6 +1,6 @@
 package chapter07.case08;
 
-import static util.Print.print;
+import static chapter06.case01.Print.print;
 
 /**
  * 在继承过程中对象的清除

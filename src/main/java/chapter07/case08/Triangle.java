@@ -1,5 +1,5 @@
 package chapter07.case08;
-import static util.Print.*;
+import static chapter06.case01.Print.*;
 /**
  * Created by lenovo on 2018/2/27.
  */

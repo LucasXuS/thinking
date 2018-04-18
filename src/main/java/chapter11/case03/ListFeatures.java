@@ -8,7 +8,7 @@ import chapter14.case07.Pets;
 
 import java.util.*;
 
-import static util.Print.print;
+import static chapter06.case01.Print.print;
 
 /**
  * List的基本操作

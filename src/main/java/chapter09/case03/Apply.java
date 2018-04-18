@@ -1,5 +1,5 @@
 package chapter09.case03;
-import static util.Print.print;
+import static chapter06.case01.Print.print;
 /**
  * "策略"设计模式与不使用接口带来的不便
  */

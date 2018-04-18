@@ -1,5 +1,5 @@
 package chapter07.case07;
-import static util.Print.*;
+import static chapter06.case01.Print.*;
 /**
  * 组合和继承的同时使用
  */

@@ -7,7 +7,7 @@ import chapter14.case07.Pets;
 
 import java.util.LinkedList;
 
-import static util.Print.print;
+import static chapter06.case01.Print.print;
 
 /**
  * LinkedList 和ArrayList 相比，在插入和删除元素中开销更小，

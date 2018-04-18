@@ -1,5 +1,5 @@
 package chapter08.case06;
-import static util.Print.print;
+import static chapter06.case01.Print.print;
 /**
  * 静态函数不可使用多态性
  */

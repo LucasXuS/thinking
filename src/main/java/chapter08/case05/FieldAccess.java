@@ -1,6 +1,6 @@
 package chapter08.case05;
 
-import static util.Print.print;
+import static chapter06.case01.Print.print;
 
 /**
  * 类里面的变量（属性）不具有多态性。因为只有函数才会进行后期绑定。

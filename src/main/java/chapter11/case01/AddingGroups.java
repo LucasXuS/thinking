@@ -1,7 +1,7 @@
 package chapter11.case01;
 
 import java.util.*;
-import static util.Print.*;
+import static chapter06.case01.Print.*;
 
 /**
  * 添加一组元素

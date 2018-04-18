@@ -2,7 +2,7 @@ package chapter11.case02;
 
 import java.util.*;
 
-import static util.Print.print;
+import static chapter06.case01.Print.print;
 
 /**
  * 三种容器的细微差别

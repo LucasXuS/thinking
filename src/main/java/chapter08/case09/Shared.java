@@ -1,6 +1,6 @@
 package chapter08.case09;
 
-import static util.Print.print;
+import static chapter06.case01.Print.print;
 
 
 // 共享对象
