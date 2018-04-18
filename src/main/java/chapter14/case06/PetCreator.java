@@ -11,8 +11,12 @@ import java.util.Random;
 public abstract class PetCreator {
     private Random rand = new Random(47);
 
+
+    // 抽象方法，后面会根据不同的方式实现这个方法。
     public abstract List<Class<? extends Pet>> types();
 
+
+    // 根据派生类给出的types()生成一个随机的类，再用newInstance创建一个对象
     public Pet randomPet() {
         int n = rand.nextInt(types().size());
         try {
